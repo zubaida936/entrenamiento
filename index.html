@@ -72,9 +72,7 @@
   // }
   function getUserByEmail() {
     var user_email = document.getElementById("email").value;
-    let url = new URL('https://arcane-stream-69379.herokuapp.com/getUser');
-    url.searchParams.set('email', user_email);
-    fetch(url)
+    fetch('https://arcane-stream-69379.herokuapp.com/getUser?email='+user_email)
       .then(response => response.json())
       .then(json => {
 
