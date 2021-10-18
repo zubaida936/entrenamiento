@@ -1,44 +1,37 @@
 
 h2{
   
-  color:#FA8072;
+  color:#CD001A;
   font-size: x-large;
-  margin: 20px;
-  padding: 1%;
+ padding: 5px;
 }
 body {
-  background-color: lightblue;
+  background-color: #a3c8ae;
   }
   
-
-button {
+  button {
   background-color: #FA8072;
-  border: 4px;
+  border: 1px;
   color:white;
-  margin: 35px;
-
-  
-  
- }
+  margin: 3px;
+  }
 
 div{
-  margin: 20px;
-  padding: 1%;
-}
+ padding: 5px;
+  }
 
 table{
   border-collapse: collapse;
   padding:10px;
   width:100%;
-  
-
   }
+
 th{
   height:35px;
 	text-align:left;
 	vertical-align: top;
-	background-color: #FA8072;
-  color:white;
+	background-color: white;
+  color:#CD001A;
 }
 
 th,td{
