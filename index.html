@@ -13,12 +13,26 @@
 
   <div>
 
-    <label>Email:</label> <input type="email" id="email" placeholder="email">
-    <label>Password:</label><input type="password" id="passw" placeholder="password.."><br><br>
-    <!---- <button onclick="getTableOfUsers()" style=width:100px>Users</button>-->
-    <button onclick="getUserByEmail()" style=width:100px>Get User </button>
-    <button onclick="Authenticate()" style=width:100px>Authenticate </button>
-    <button onclick="addNewUser()" style=width:100px>Add User</button>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="passw">
+      </div>
+    </form>
+
+    <br>
+    <div class="d-grid gap-2 d-md-block">
+      <button onclick="getUserByEmail()" class="btn btn-info" type="button">Get User</button>
+      <button onclick="Authenticate()" class="btn btn-danger" type="button">Authenticate</button>
+      <button onclick="addNewUser()" class="btn btn-warning" type="button">Add user</button>
+    </div>
+
+    <br>
     <!---- <p><a href="client2.html" color:#FA8072 >Get User</a></p> -->
   </div>
   <table id="myTable"></table>
