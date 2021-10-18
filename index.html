@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="style.css">
 <script>
   // function getTableOfUsers() {
-  fetch('http://localhost:1234/Users')
+  fetch('https://arcane-stream-69379.herokuapp.com/Users')
     .then(response => response.json())
     .then(json => {
       var tr = document.createElement('tr');
@@ -58,7 +58,7 @@
   // }
   function getUserByEmail() {
     var user_email = document.getElementById("email").value;
-    let url = new URL('http://localhost:1234/getUser');
+    let url = new URL('https://arcane-stream-69379.herokuapp.com/getUser');
     url.searchParams.set('email', user_email);
     fetch(url)
       .then(response => response.json())
@@ -117,7 +117,7 @@
       redirect: 'follow'
     };
 
-    fetch("http://localhost:1234/addUser", requestOptions)
+    fetch("https://arcane-stream-69379.herokuapp.com/addUser", requestOptions)
       .then(response => response.text())
       .then(result => {
 
@@ -150,7 +150,7 @@
       redirect: 'follow'
     };
 
-    fetch("http://localhost:1234/AuthenticateUser", requestOptions)
+    fetch("https://arcane-stream-69379.herokuapp.com/AuthenticateUser", requestOptions)
       .then(response => response.text())
       .then(result => {
         if (user_email == "" || user_password == "") {
